@@ -10,7 +10,6 @@ ws.addEventListener('message', e => {
   notification.style.display = 'block';
 })
 
-//homework: dodati notifikaciju HTML dodaj i zvuk :)
 
 fetch('https://baza-filmova.herokuapp.com/filmovi/')
     .then(res => res.json())
@@ -32,19 +31,20 @@ function filter() {
 function render(niz) {
     div.innerHTML = '';
     for (let i = 0; i < niz.length; i++) {
+        const wrapper = document.createElement('div');
         const naziv = document.createElement('h3');
         const content = document.createTextNode(`${niz[i].naziv}`)
         naziv.appendChild(content);
-        div.appendChild(naziv);
+        wrapper.appendChild(naziv);
 
         const godina = document.createElement('h3');
         const content1 = document.createTextNode(`${niz[i].godina}`)
         godina.appendChild(content1);
-        div.appendChild(godina);
+        wrapper.appendChild(godina);
 
         const button = document.createElement('button');
         button.innerText = 'x';
-        div.appendChild(button);
+        wrapper.appendChild(button);
         button.addEventListener('click', function () {
             obrisi(niz[i]._id)
         })
@@ -52,7 +52,8 @@ function render(niz) {
         const slike = niz[i].slika;
         const slika = document.createElement('img');
         slika.src = slike;
-        div.appendChild(slika);
+        wrapper.appendChild(slika);
+        div.appendChild(wrapper);
     }
 }
 
