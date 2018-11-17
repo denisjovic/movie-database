@@ -10,10 +10,14 @@ img {
  }
 
  nav > a {
-     border: 2px solid rgb(3, 3, 70);
      padding: 5px;
      background-color: orange;
      text-decoration: none;
+     padding: 10px;
+ }
+ nav {
+     margin: 30px 5px 10px 5px;
+
  }
 
  #div {
@@ -28,7 +32,7 @@ img {
     text-align: center;
     position: relative;
     background-color: green;
-    border: 2px solid orange;
+        border-radius: 5%;
     
  }
 
