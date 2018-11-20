@@ -1,13 +1,23 @@
+
+
+
 let filteredArray = '';
 let originalArray = '';
 const target = document.getElementById('unos');
 const div = document.getElementById('div');
 const notification = document.getElementById('notification');
 const ws = new WebSocket('ws://baza-filmova.herokuapp.com/filmovi')
+const login = document.getElementById('login');
+const pass = document.getElementById('pass');
+const butt = document.getElementById('butt');
+
+
+
+
 
 ws.addEventListener('message', e => {
-  notification.innerText = e.data;
-  notification.style.display = 'block';
+    notification.innerText = e.data;
+    notification.style.display = 'block';
 })
 
 
@@ -31,6 +41,9 @@ function filter() {
 function render(niz) {
     div.innerHTML = '';
     for (let i = 0; i < niz.length; i++) {
+
+
+
         const wrapper = document.createElement('div');
         const naziv = document.createElement('h3');
         const content = document.createTextNode(`${niz[i].naziv}`)
@@ -48,14 +61,23 @@ function render(niz) {
         button.addEventListener('click', function () {
             obrisi(niz[i]._id)
         })
+        button.style.display = 'none';
 
         const slike = niz[i].slika;
         const slika = document.createElement('img');
         slika.src = slike;
         wrapper.appendChild(slika);
         div.appendChild(wrapper);
+
+
     }
+
+
+
+    
 }
+
+
 
 function init() {
     render(originalArray)
@@ -75,11 +97,12 @@ function obrisi(id) {
         })
         .then(res => res.text())
         .then(res => {
-          alert(res)
-        window.location.reload();
-        }) 
+            alert(res)
+            window.location.reload();
+        })
 
 
 }
 
 target.addEventListener('change', filter);
+

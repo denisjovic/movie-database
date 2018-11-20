@@ -5,7 +5,7 @@ const slikaFilma = document.getElementById('slika-filma');
 
 forma.addEventListener('submit', (e) => {
 
-    //STANDARD FETCH REQUEST
+    // ============================    STANDARD FETCH REQUEST ========================
 
     // fetch('https://baza-filmova.herokuapp.com/dodaj-film', {
     //     method: 'post',
@@ -20,7 +20,7 @@ forma.addEventListener('submit', (e) => {
     
     // e.preventDefault();
 
-    //AXIOS REQUEST
+    // ==============================  AXIOS REQUEST ==============================
 
     axios.post('https://baza-filmova.herokuapp.com/dodaj-film', {
     naziv: nazivFilma.value,

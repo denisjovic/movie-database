@@ -12,6 +12,10 @@ img {
     height: 180px;
  }
 
+ h3 {
+     text-align: center;
+ }
+
  
 
  nav > a {
@@ -36,6 +40,12 @@ img {
      text-align:center;
     
  }    
+
+ #login {
+     font-size: 16px;
+     display: flex;
+     justify-content: flex-end;
+ }
      
 
  #unos {
@@ -75,6 +85,18 @@ img {
      position: absolute;
      top: 0;
      right: 0;
+     background: #00ffff;
+     border-radius: 10px;
+
+ }
+
+ #butt{
+    position: relative;
+    top: 0;
+    right: 0;
+    background: #00ffff;
+    border-radius: 10px;
+
  }
 
  #notification {
@@ -89,6 +111,11 @@ img {
     text-align: center;
     padding-top: 35px;
     
+}
+
+form {
+    text-align: center;
+    font-size: 2rem;
 }
  
  
