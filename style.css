@@ -1,10 +1,12 @@
-body{
-    font-family: 'Raleway', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 
+
+body{
+    font-family: 'Amatic SC', cursive;
 }
 
 img {
-    width: 100%;
+    width: 200px;
     display: flex;
     height: 180px;
  }
@@ -13,7 +15,7 @@ img {
 
  nav > a {
      padding: 5px;
-     background-color: rgb(22, 224, 22);
+     background-color: rgb(10, 218, 183);
      text-decoration: none;
      padding: 1rem;
      margin: 1rem;
@@ -52,11 +54,11 @@ img {
 
  #div > div {
     margin: 0 20px 20px 0;
-    max-width: 200px;
+    max-width: 300px;
     text-align: center;
     position: relative;
-    background-color: rgb(22, 224, 22);
-        border-radius: 3%;
+    background-color: rgb(10, 218, 183);
+    border-radius: 10%;
     
  }
 
