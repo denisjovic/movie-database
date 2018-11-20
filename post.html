@@ -15,23 +15,10 @@
         <a href="index.html">Home</a>
         <a href="#">Dodaj Film</a>
     </nav>
-
-    <div class="main">
-            <form>
-                <h1>Dodaj Film</h1>
-                Naziv:<br>
-                <input type="text" name="naziv" id="naziv-filma" required><br>
-                Godina:<br>
-                <input type="number" name="godina" id="godina-filma" required><br>
-                Slika:<br>
-                <input type="text" name="slika" id="slika-filma" required><br><br>
-                <button type="submit">Posalji</button>
-            </form>
-            <div id='preview'></div>
         
     
-    <!-- <div class="main">
-    <form action="https://baza-filmova.herokuapp.com/dodaj-film/" method="POST">
+    <div class="main">
+    <form action="https://baza-filmova.herokuapp.com/dodaj-film/" method="POST" id="forma">
         <h1>Dodaj Film</h1>
         Naziv:<br>
         <input type="text" name="naziv" id="naziv-filma" required><br>
@@ -41,9 +28,10 @@
         <input type="text" name="slika" id="slika-filma" required><br><br>
         <button type="submit">Posalji</button>
     </form>
-    <div id='preview'></div> -->
 </div>
 
 </body>
-<script src="preview.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script src="app.js"></script>
 </html>

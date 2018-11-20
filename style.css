@@ -9,21 +9,45 @@ img {
     height: 180px;
  }
 
+ 
+
  nav > a {
      padding: 5px;
-     background-color: orange;
+     background-color: rgb(22, 224, 22);
      text-decoration: none;
-     padding: 10px;
+     padding: 1rem;
+     margin: 1rem;
  }
- nav {
-     margin: 30px 5px 10px 5px;
 
+ nav > a:hover {
+     transform: scale(1.1);
+     
+ }
+ #nav {
+     margin: 30px 5px 50px 5px;
+     display: flex;
+     justify-content: center;
+ }
+
+ h1 {
+     text-align:center;
+    
+ }    
+     
+
+ #unos {
+     width: 80vh;
+     height: 2rem;
+     display: flex;
+     justify-content: center;
+     margin: auto;
  }
 
  #div {
      display: flex;
      flex-wrap: wrap;
      justify-content: space-around;
+     margin-top: 7rem;
  }
 
  #div > div {
@@ -31,8 +55,8 @@ img {
     max-width: 200px;
     text-align: center;
     position: relative;
-    background-color: green;
-        border-radius: 5%;
+    background-color: rgb(22, 224, 22);
+        border-radius: 3%;
     
  }
 
